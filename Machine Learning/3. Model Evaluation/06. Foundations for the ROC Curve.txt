@@ -16,25 +16,24 @@ Logistic Regression Threshold (Порог Логической регресси�
     Это график, показывающий все возможные модели и их характеристики.
 
 
-
     Sensitiviy & Specificity (Чувствительноть и Специфичность)
         ROC Curve - график зависимости Sensitivity от Specificity. Эти значения демонстрируют тот же компромисс, что и точность и отзыв.
 
-                        # positives predicted correctly		   TP
+                        # positives predicted correctly        TP
         Sensitivity = ----------------------------------- = ---------  (Схоже с recall)
-                            # positive cases				 TP + FN
+                            # positive cases                 TP + FN
 
-                        # negatives predicted correctly		   TN
+                        # negatives predicted correctly        TN
         Specificity = ----------------------------------- = ---------
-                            # negative cases				 TN + FP
+                            # negative cases                 TN + FP
 
         Пример:
             Мы провели тестовое разделение на нашем наборе данных (Test Set (222 элемента))
             96 Положительных случаев, 126 отрицательных случаев.
 
-                                Actual positive		Actual negative
-            Predicted positive  	  [61]				  21
-            Predicted negative		   35				 [105]
+                                Actual positive     Actual negative
+            Predicted positive        [61]                21
+            Predicted negative         35                [105]
 
             Sensetivity = 61 / 96 = 0.6354
             Specificity = 105 / 126 = 0.8333
