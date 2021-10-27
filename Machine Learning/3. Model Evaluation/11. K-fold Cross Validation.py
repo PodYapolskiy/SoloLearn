@@ -2,7 +2,6 @@ import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 from sklearn.model_selection import train_test_split
-import numpy as np
 
 df = pd.read_csv('D:\\SoloLearn\\Machine Learning\\titanic.csv')
 df['male'] = df['Sex'] == 'male'
