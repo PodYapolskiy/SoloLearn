@@ -1,0 +1,172 @@
+/* FONT-FAMILY */
+p.serif {
+  font-family: 'Times New Roman', Times, serif;
+}
+p.sansserif {
+  font-family: Helvetica, Arial, sans-serif;
+}
+p.monospace {
+  font-family: 'Courier New', Courier, monospace;
+}
+p.cursive {
+  font-family: Florence, cursive;
+}
+p.fantasy {
+  font-family: Blippo, fantasy;
+}
+
+/* FONT-SIZE */
+p.small {
+  font-size: small;
+}
+p.medium {
+  font-size: medium;
+}
+p.large {
+  font-size: large;
+}
+p.xlarge {
+  font-size: x-large;
+}
+p.pixels {
+  font-size: 10px;
+}
+
+/* FONT-STYLE */
+p.normal {
+  font-style: normal;
+}
+p.italic {
+  font-style: italic;
+}
+p.oblique {
+  font-style: oblique;
+}
+
+/* FONT-WEIGHT */
+p.light {
+  font-weight: lighter;
+}
+p.bold {
+  font-weight: bold;
+}
+p.bolder {
+  font-weight: bolder;
+}
+
+/* FONT-VARIANT */
+p.normal-var {
+  font-variant: normal;
+}
+p.small-var {
+  font-variant: small-caps;
+}
+
+/* COLOR */
+p.some-color {
+  color: red; /* #ff0000; rgb(255, 0, 0) */
+}
+
+/* TEXT-ALIGN */
+p.left {
+  text-align: left;
+}
+p.center {
+  text-align: center;
+}
+p.right {
+  text-align: right;
+}
+p.justify {
+  text-align: justify;
+}
+
+/* VERTICAL-ALIGN */
+td.top {
+  vertical-align: top;
+}
+td.middle {
+  vertical-align: middle;
+}
+td.bottom {
+  vertical-align: bottom;
+}
+span.baseline {
+  vertical-align: baseline;
+}
+span.sub {
+  vertical-align: sub;
+}
+span.super {
+  vertical-align: super;
+}
+span.pixel {
+  vertical-align: -10px;
+}
+.some-div {
+  height: 150px;
+  width: 400px;
+  background-color: LightSkyBlue;
+  display: inline-table;
+  /* Без display'ев не работает */
+}
+.paragraph {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* TEXT-DECORATION */
+p.overline {
+  text-decoration: overline;
+}
+p.underline {
+  text-decoration: underline;
+}
+p.line-through {
+  text-decoration: line-through;
+}
+p.blink {
+  text-decoration: blink;
+}
+
+/* TEXT-INDENT */
+p.indented {
+  text-indent: 60px;
+}
+
+/* TEXT-SHADOW */
+p.simple-shadow {
+  text-shadow: 5px 2px 4px gray;
+}
+
+/* TEXT-TRANSFORM */
+p.capitalize {
+  text-transform: capitalize;
+}
+
+/* LETTER-SPACING */
+p.normal-ls {
+  letter-spacing: normal;
+}
+p.positive-ls {
+  letter-spacing: 4px;
+}
+
+/* WORD-SPACING */
+p.normal-ws {
+  word-spacing: normal;
+}
+p.positive-ws {
+  word-spacing: 30px;
+}
+
+/* WHITE-SPACE */
+p.pre {
+  white-space: pre;
+}
+p.preline {
+  white-space: pre-line;
+}
+p.prewrap {
+  white-space: pre-wrap;
+}
