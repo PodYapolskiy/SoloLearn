@@ -1,0 +1,108 @@
+img {
+  width: 49%;
+}
+
+/* BORDER */
+p.border {
+  /* border-width border-style border-color */
+  border: 5px solid green;
+  padding: 10px;
+}
+
+/* BORDET-STYLE */
+p.none {
+  border-style: none;
+}
+p.dotted {
+  border-style: dotted;
+}
+p.dashed {
+  border-style: dashed;
+}
+p.double {
+  border-style: double;
+}
+p.groove {
+  border-style: groove;
+}
+p.ridge {
+  border-style: ridge;
+}
+p.inset {
+  border-style: inset;
+}
+p.outset {
+  border-style: outset;
+}
+p.hidden {
+  border-style: hidden;
+}
+
+.w-h {
+  border: 4px solid green;
+}
+.px {
+  height: 90px;
+  width: 90px;
+  margin-bottom: 10px;
+}
+.per {
+  width: 100%;
+  height: 90px;
+}
+
+/* BACKGROUND-COLOR */
+p.bg-c {
+  background-color: aquamarine;
+}
+
+/* BACKGROUND-IMAGE */
+p.bg-i {
+  background-image: url('https://api.sololearn.com/DownloadFile?id=2627');
+  background-repeat: no-repeat; /* repeat-x repeat-y */
+  /* background-attachment: scroll; */
+}
+
+/* LIST-STYLE */
+ol.lower-alpha {
+  list-style-type: lower-alpha;
+}
+ul.circle {
+  list-style-type: circle;
+}
+ul.square {
+  list-style-type: square;
+}
+ul.l-s {
+  list-style-image: url('http://www.sololearn.com/images/bullet.jpg');
+  list-style-position: inside;
+}
+
+/* TABLES */
+#tb1 {
+  margin-bottom: 10px;
+  border-collapse: separate;
+  border-spacing: 20px 40px;
+  empty-cells: hide;
+}
+#tb2 {
+  margin-bottom: 10px;
+  border-collapse: collapse;
+  border-spacing: 20px 40px; /* Не работает с collapse */
+}
+#tb3 {
+  caption-side: top;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  color: crimson;
+}
+a:hover {
+  color: chartreuse;
+}
+a:active {
+  color: gold;
+}
