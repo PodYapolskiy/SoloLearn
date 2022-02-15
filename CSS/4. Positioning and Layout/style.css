@@ -1,0 +1,85 @@
+/* DISPLAY */
+.block-display span {
+  display: block;
+}
+.inline-display p {
+  display: inline;
+}
+.list-item-display p {
+  display: list-item;
+}
+
+/* Difference between display and visibility */
+div.none {
+  display: none;
+}
+div.hidden {
+  visibility: hidden;
+}
+
+/* POSITION */
+p.position_static {
+  position: static;
+  top: 30px;
+  right: 5px;
+  color: red;
+}
+p.position_fixed {
+  position: fixed;
+  top: 30px;
+  right: 5px;
+  color: red;
+}
+p.position_relative {
+  position: relative;
+  top: 20px; /* относительно своей нормальной позиции */
+  left: 70px;
+}
+
+/* FLOAT; CLEAR */
+img {
+  float: right;
+}
+.floating {
+  float: right;
+}
+.clearing {
+  clear: both;
+}
+
+/* OVERFLOW */
+.overflow-none {
+  width: 150px;
+  height: 150px;
+  background-color: LightBlue;
+  float: left;
+  margin-right: 20px;
+}
+.overflow-scroll {
+  width: 150px;
+  height: 150px;
+  background-color: LightBlue;
+  overflow: scroll; /* auto; hidden */
+  padding-bottom: 20px;
+}
+
+/* Z-INDEX (только с position: ...) */
+.blue {
+  z-index: 3; /* благодаря этому св-ву отображается поверх красного */
+  position: absolute;
+  background-color: #8ec4d0;
+  margin-bottom: 15px;
+  width: 120px;
+  height: 120px;
+  color: #fff;
+}
+.red {
+  z-index: 2;
+  position: absolute;
+  background-color: #ff4d4d;
+  width: 120px;
+  height: 120px;
+  color: #fff;
+  margin-top: 50px;
+  margin-left: 50px;
+}

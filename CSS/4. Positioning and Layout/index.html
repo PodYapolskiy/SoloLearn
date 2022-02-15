@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="block-display">
+      <h3>block</h3>
+      <span>First paragraph.</span>
+      <span>Second paragraph.</span>
+      <span>Third paragraph.</span>
+    </div>
+
+    <div class="inline-display">
+      <h3>inline</h3>
+      <p>First paragraph.</p>
+      <p>Second paragraph.</p>
+      <p>Third paragraph.</p>
+    </div>
+
+    <div class="list-item-display">
+      <h3>list-item</h3>
+      <p>First paragraph.</p>
+      <p>Second paragraph.</p>
+      <p>Third paragraph.</p>
+    </div>
+    <hr />
+
+    <div>
+      <h3>This is display none</h3>
+      <div class="none">This text will not display in browser.</div>
+      <p>
+        The space above this paragraph is empty because the visibility of the
+        div element is set to hidden.
+      </p>
+
+      <h3>This is visibility hidden</h3>
+      <div class="hidden">This text will not display in browser.</div>
+      <p>
+        The space above this paragraph is empty because the visibility of the
+        div element is set to hidden.
+      </p>
+    </div>
+    <hr />
+
+    <div>
+      <p>Paragraph with no position.</p>
+      <p>Paragraph with no position.</p>
+      <p class="position_static">This paragraph has a static position.</p>
+      <p class="position_fixed">This paragraph has a fixed position.</p>
+      <p class="position_relative">This paragraph has a relative position.</p>
+    </div>
+    <hr />
+
+    <div>
+      <p>
+        <img src="http://www.sololearn.com/uploads/css_logo.png" /> This
+        paragraph has an image that is floated to the <strong>right.</strong>
+        It is highly recommended to add a margin to images so that the text does
+        not get too close to the image. If you want your text to be easily read,
+        you should always add a few pixels between words and borders, images,
+        and other content.
+      </p>
+    </div>
+    <hr />
+
+    <div>
+      This paragraph is above the div element and is not affected by the float
+      right property.
+      <br /><br />
+      <div class="floating">
+        <img src="http://www.sololearn.com/uploads/css_logo.png" />
+      </div>
+      This paragraph comes after the div element and is affected by the float
+      right property.
+      <br /><br class="clearing" />
+      This paragraph is out of the floating group and is not affected by the
+      float right property.
+      <br />
+      <br />
+    </div>
+    <hr />
+
+    <div class="overflow-none">
+      This text is inside the div element, which has a blue background color and
+      is floated to the left. We set a specific height and width for the div
+      element, and as you can see, the content cannot fit.
+    </div>
+    <div class="overflow-scroll">
+      This text is inside the div element, which has a blue background color and
+      is floated to the left. We set a specific height and width for the div
+      element, and as you can see, the content cannot fit.
+    </div>
+    <hr />
+
+    <div>
+      <div class="blue">Blue</div>
+      <div class="red">Red</div>
+    </div>
+  </body>
+</html>
