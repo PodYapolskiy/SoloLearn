@@ -1,0 +1,111 @@
+/* BORDER-RADIUS */
+.border-radius {
+  border-radius: 0 0 20px 20px;
+  background-color: green;
+  color: white;
+  padding: 50px;
+}
+.fake-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: green;
+}
+
+/* BOX-SHADOW */
+.box-shadow {
+  width: 300px;
+  height: 100px;
+  background-color: #9acd32;
+}
+.bs1 {
+  box-shadow: 10px 10px #888888;
+  margin-bottom: 30px;
+}
+.bs2 {
+  box-shadow: 10px 10px 5px 5px #888888;
+  margin-bottom: 30px;
+}
+.mult-shadows {
+  width: 300px;
+  height: 100px;
+  background-color: #9acd32;
+  box-shadow: 0 0 10px 4px #ff6347, 0 0 10px 30px #ffdab9,
+    30px 0 20px 30px #b0e0e6;
+  margin: 50px 0 50px 50px;
+}
+
+.navbar {
+  background: url('http://www.sololearn.com/images/bg2.jpg');
+}
+nav {
+  padding: 50px 0;
+  min-width: 500px;
+}
+nav ul {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 25%,
+    rgba(255, 255, 255, 0.2) 75%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+    inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  padding: 10px;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: Arial;
+  text-decoration: none;
+  display: block;
+}
+
+/* TEXT-SHADOW (https://www.sololearn.com/learning/1023/2241/4478/1) */
+.text-shadow {
+  text-shadow: 5px 10px 2px #93968f, -3px 6px 5px #58d1e3;
+}
+
+/* PSEUDO-CLASSES */
+#parent p:first-child {
+  color: green;
+}
+#parent p:last-child {
+  color: blue;
+}
+
+/* PSEUDO ELEMENTS */
+.pseudo-p::first-line {
+  color: #589432;
+}
+.pseudo-p::selection {
+  background: #8bc34a;
+  color: rgb(231, 228, 228);
+}
+.before-after p:first-child::before {
+  content: url('http://www.sololearn.com/images/bullet.jpg');
+}
+.before-after p:last-child::after {
+  content: url('http://www.sololearn.com/images/bullet.jpg');
+}
+
+/* WORD_WRAP */
+.word-wrap {
+  width: 210px;
+  height: 100px;
+  border: 1px solid #000000;
+  word-wrap: break-word;
+}
+
+@font-face {
+  font-family: 'YandexSans';
+  font-weight: bold;
+  src: url('YandexSansText-Bold.ttf');
+}
+h2 {
+  font-family: 'YandexSans';
+}
