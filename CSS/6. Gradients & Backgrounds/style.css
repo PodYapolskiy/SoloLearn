@@ -1,0 +1,116 @@
+/* LINEAR-GRADIENT */
+.linear-gradient {
+  width: 300px;
+  height: 100px;
+  margin: 4px;
+  color: #fff;
+  background: linear-gradient(DeepSkyBlue, Black);
+}
+.first {
+  width: 300px;
+  height: 100px;
+  margin: 4px;
+  color: #fff;
+  background: -webkit-linear-gradient(left, blue, green, white);
+  background: -moz-linear-gradient(left, blue, green, white);
+  background: -ms-linear-gradient(left, blue, green, white);
+}
+.second {
+  width: 300px;
+  height: 100px;
+  margin: 4px;
+  background: -webkit-linear-gradient(bottom, blue, green, white);
+  background: -moz-linear-gradient(bottom, blue, green, white);
+  background: -ms-linear-gradient(bottom, blue, green, white);
+}
+
+/* RADIAL-GRADIENT */
+.radial-gradient {
+  height: 150px;
+  width: 200px;
+  color: #fff;
+  background: -moz-radial-gradient(circle, green, yellow, blue);
+  background: -webkit-radial-gradient(circle, green, yellow, blue);
+  background: -ms-radial-gradient(circle, green, yellow, blue);
+}
+
+/* BACKGROUND-SIZE */
+.background-size {
+  height: 150px;
+  width: 200px;
+  border: 1px solid #000;
+  background: url('http://www.sololearn.com/uploads/css_logo.png') no-repeat 50%
+    50%;
+  background-size: 100px 100px;
+}
+
+.contain {
+  height: 150px;
+  width: 200px;
+  border: 1px solid #000;
+  background: url('http://www.sololearn.com/uploads/css_logo.png') no-repeat 50%
+    50%;
+  background-size: contain;
+}
+
+.cover {
+  height: 150px;
+  width: 200px;
+  border: 1px solid #000;
+  background: url('http://www.sololearn.com/uploads/css_logo.png') no-repeat 50%
+    50%;
+  background-size: cover;
+}
+
+/* BACKGROUND-CLIP */
+#first {
+  border: 2px dotted black;
+  padding: 20px;
+  background: LightBlue;
+  background-clip: padding-box;
+}
+#second {
+  border: 2px dotted black;
+  padding: 20px;
+  background: LightBlue;
+  background-clip: content-box;
+}
+#third {
+  background-image: url('http://www.sololearn.com/uploads/css_logo.png');
+  background-clip: content-box;
+  border: 2px dotted black;
+  padding: 20px;
+}
+
+/* Transparent border */
+.trans {
+  /* без этого прозрачности не будет */
+  background-clip: padding-box;
+
+  border: 20px solid rgba(0, 0, 0, 0.3);
+  width: 200px;
+  position: relative;
+  top: 70px;
+  background-color: white;
+}
+
+/* Multiple images */
+.mult {
+  width: 400px;
+  height: 300px;
+  background-image: url('http://www.sololearn.com/uploads/css_logo.png'),
+    url('http://www.sololearn.com/uploads/better-code.jpg');
+  background-position: right bottom, left top;
+  background-repeat: no-repeat;
+}
+
+/* OPACITY */
+#img1 {
+  opacity: 1;
+}
+#img2 {
+  opacity: 0.5;
+}
+#img3 {
+  opacity: 0.25;
+}
