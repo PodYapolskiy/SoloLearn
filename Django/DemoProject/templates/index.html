@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+
+{% load static %}
+
+{% block content %}
+<h3>Данные из индекса</h3>
+
+<img src="{% static 'img\kwork.png' %}" alt="" height="200px" >
+
+<hr />
+
+{% include "index_old.html" %}
+{% endblock %}
