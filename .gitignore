@@ -33,3 +33,6 @@ wheels/
 *.egg 
 *.manifest 
 *.spec
+
+# Only after deplyment stuff
+Django/DemoProject/static
