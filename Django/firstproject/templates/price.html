@@ -12,7 +12,7 @@
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
-          <h3>10 000 руб.</h3>
+          <h3>{{ pc_1 }} руб.</h3>
         </div>
       </div>
       <div
@@ -25,7 +25,7 @@
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
-          <h3>20 000 руб.</h3>
+          <h3>{{ pc_2 }} руб.</h3>
         </div>
       </div>
       <div
@@ -38,7 +38,7 @@
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
-          <h3>30 000 руб.</h3>
+          <h3>{{ pc_3 }} руб.</h3>
         </div>
       </div>
     </div>
@@ -57,21 +57,13 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Услуга 1 Услуга 1 Услуга 1</td>
-          <td><del>2000</del></td>
-          <td>1000</td>
-        </tr>
-        <tr>
-          <td>Услуга 2 Услуга 2 Услуга 2</td>
-          <td><del>2000</del></td>
-          <td>1000</td>
-        </tr>
-        <tr>
-          <td>Услуга 3 Услуга 3 Услуга 3</td>
-          <td><del>2000</del></td>
-          <td>1000</td>
-        </tr>
+        {% for obj in price_table %}
+          <tr>
+            <td>{{ obj.pt_title }}</td>
+            <td><del>{{ obj.pt_old_price }}</del></td>
+            <td>{{ obj.pt_new_price }}</td>
+          </tr>
+        {% endfor %}
       </tbody>
     </table>
   </div>
