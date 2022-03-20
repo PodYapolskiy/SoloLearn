@@ -1,6 +1,5 @@
 from django.db import models
 
-# Create your models here.
 
 class CmsSlider(models.Model):
     cms_img = models.ImageField(upload_to='sliderimg/')
