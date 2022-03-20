@@ -1,0 +1,55 @@
+{# Copy from 'env\Lib\site-packages\django\contrib\admin\templates\admin' #}
+{% extends "admin/base.html" %}
+{% load static %}
+
+<link href="{% static 'external.css' %}" rel="stylesheet" />
+
+{% block title %}
+  {% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} | {{ site_title|default:_('Django site admin') }}
+{% endblock %}
+
+{% block extrastyle %}
+  {# Add new styles #}
+  <style>
+    body {
+      background-color: #b5b5b5;
+    }
+
+    h1 {
+      color: #000000;
+    }
+
+    #header {
+      background-color: #254b69;
+    }
+
+    #branding {
+      width: 90%;
+    }
+
+    #site-name {
+      float: right;
+    }
+  </style>
+{% endblock %}
+
+{% block branding %}
+  <a class="navbar-brand logo-top" href="#">
+    <img
+      src="{% static 'img/Logo.png' %}"
+      width="40"
+      height="40"
+      class="d-inline-block align-top"
+      alt=""
+      loading="lazy"
+    />
+    Brand Name
+  </a>
+
+  <h1 id="site-name">
+    <a href="{% url 'admin:index' %}">{{ site_header|default:_('Django administration') }}</a>
+  </h1>
+{% endblock %}
+
+{% block nav-global %}
+{% endblock %}
