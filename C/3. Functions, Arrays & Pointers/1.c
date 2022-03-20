@@ -3,7 +3,7 @@
 
 #define global_1 "Hello"
 
-char global_2[6] = "world!";
+char global_2[7] = "world!";
 
 /* declaration */
 int square(int num); // Function prototype
