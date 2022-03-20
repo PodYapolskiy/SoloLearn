@@ -30,14 +30,13 @@ def first_page(request):
 
 
 def thanks_page(request):
-    if request.method == 'GET':
-        name = request.GET['name']
-        phone = request.GET['phone']
-    else:
+    if request.POST:
         name = request.POST['name']
         phone = request.POST['phone']
-    element = Order(order_name=name, order_phone=phone)
-    element.save()
-    send_telegram(tg_name=name, tg_phone=phone)
+        element = Order(order_name=name, order_phone=phone)
+        element.save()
+        send_telegram(tg_name=name, tg_phone=phone)
 
-    return render(request, './thanks.html', {'name': name, 'phone': phone})
+        return render(request, './thanks.html', {'name': name, 'phone': phone})
+    else:
+        return render(request, './thanks.html')
